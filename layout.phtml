@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Anti-flicker snippet (recommended)  -->
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-WK39S3':true});</script>
+
+    <?=$this->GoogleTagManager('GTM-WK39S3');?>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+
+    <?php
+      $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+      if($actual_link == 'https://novem.pl/')
+      {?>
+        <title><?=$this->Lang("Agencja Reklamowa: Performance Marketing. Digital Agency Kraków - Novem");?></title>
+        <meta name="description" content="<?=$this->Lang("Digital customer-oriented agency. Efektywnie budujemy trwałe relacje między markami a ich klientami.");?>" />
+      <?php }
+      else
+      {
+        echo $this->mainTitle;
+      }
+    ?>
+
+    <?php
+      $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+      if($actual_link == 'https://novem.pl/pl' || $actual_link == 'https://novem.pl/pl/')
+      {
+        // PHP permanent URL redirection
+        header("Location: https://novem.pl", true, 301);
+        exit();
+      } ?>
+
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+    <meta name="keywords" content="<?=$this->Lang("efektywna agencja digital, strategia digital, kretywna, marketing efektywnościowy, social media, reklama w Google, reklama w wyszukiwarce, performance, e-commerce marketing, media plan, jak się robi, atrybucja, modelowanie atrybucji, reklama na YouTube, reklama na Facebooku, analityka internetowa, agencja interaktywna, po zyskiwanie, lead, mediaplan, social.com, dom mediowy, rozliczenie za efekt, SEM, RTB, CPA, CPS, CPL, adwords");?>" />
+
+    <?
+    echo $this->meta;
+    ?>
+
+    <?php
+    if (!(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' ||
+       $_SERVER['HTTPS'] == 1) ||
+       isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
+       $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'))
+    {
+       $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+       header('HTTP/1.1 301 Moved Permanently');
+       header('Location: ' . $redirect);
+       exit();
+    }
+
+    if (substr($_SERVER['HTTP_HOST'], 0, 4) === 'www.') {
+      header('Location: http'.(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on' ? 's':'').'://' . substr($_SERVER['HTTP_HOST'], 4).$_SERVER['REQUEST_URI']);
+    exit;
+    }
+    ?>
+
+    <link rel='dns-prefetch' href='//www.novem.pl' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600|Open+Sans:400,600|Yrsa:400,600" rel="stylesheet">
+    <link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/home.css<?=$this->CacheBuster();?>" rel="stylesheet"/>
+    <link href="/css/subpages.css<?=$this->CacheBuster();?>" rel="stylesheet"/>
+    <link href="/css/mobile.css<?=$this->CacheBuster();?>" rel="stylesheet" media="screen and (max-width: 660px)"/>
+    <link href="/css/doscalenia_v2.css<?=$this->CacheBuster();?>" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" rel="stylesheet">
+    <script data-ad-client="ca-pub-3935604276890979" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+</head>
+<body>
+<?=$this->GoogleTagManager('GTM-WK39S3',true);?>
+
+<div class="loading-blend"></div>
+<div class="cover"></div>
+
+<div id="container-page">
+
+  <div class="modal" id="modal">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <a href="#" class="modal__close"><img src="/img/x.png" class="modal__image"></a>
+        </header>
+        <div class="modal__body">
+          <img src="/img/logo.png" alt="modal image" class="modal__image">
+          <h2 class="modal__title">Szukasz sposobu<br class="modal__mobile"> na dotarcie <br>do swoich <br class="modal__mobile">potencjalnych<br class="modal__mobile"> klientów?<br></h2>
+          <p class="modal__text">Poznaj nowy pakiet Digital First,<br class="modal__mobile"> dzięki któremu<br class="modal__desktop"> uporządkujesz <br class="modal__mobile">marketingowy chaos.</p>
+        </div>
+        <div class="modal__footer">
+          <div class="modal__column"><a href="https://padigital.io/" class="modal__link"><img src="/img/logo_small.png" class="modal__logo-small"></a></div>
+          <div class="modal__column modal__footer-line"></div>
+          <div class="modal__column"><a href="https://padigital.io/digitalfirst" class="modal__button">Sprawdź</a></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<header>
+    <div class="menubar">
+        <div class="menu">
+            <i class="fa fa-bars"></i>
+            <div class="menu-label">menu</div>
+        </div>
+
+        <a href="https://novem.pl" class="internal">
+            <div class="logo"></div>
+        </a>
+
+        <a href="https://www.facebook.com/Novempl" target="_blank" class="right-icons">
+                <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/2907485/" class="right-icons" target="_blank">
+                <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a href="<?=$this->Link("kontakt",null,false);?>" class="internal right-icons menu-contact">
+            <i class="fa fa-envelope-open-o"></i>
+        </a>
+
+    </div>
+</header>
+<nav>
+
+    <ul>
+        <li><a href="javascript:void(0)"><?=$this->Lang("Co robimy");?></a>
+            <ul>
+                <li><a href="<?=$this->Link("strategia");?>" class="internal"><?=$this->Lang("Strategia");?></a></li>
+                <li><a href="<?=$this->Link("performance");?>" class="internal"><?=$this->Lang("Performance");?></a></li>
+                <li><a href="<?=$this->Link("analityka");?>" class="internal"><?=$this->Lang("Analityka");?></a></li>
+            </ul>
+        </li>
+        <li><a href="<?=$this->Link("salepromotion","case-studies");?>"><?=$this->Lang("Case studies");?></a></li>
+        <li><a href="javascript:void(0)"><?=$this->Lang("Narzędzia");?></a>
+            <ul>
+                <li><a href="<?=$this->Link("mediabuying");?>" class="internal"><?=$this->Lang("Media buying");?></a></li>
+                <li><a href="<?=$this->Link("search");?>" class="internal"><?=$this->Lang("Search");?></a></li>
+                <li><a href="<?=$this->Link("socialmedia");?>" class="internal"><?=$this->Lang("Social media ads");?></a></li>
+                <li><a href="<?=$this->Link("customer");?>" class="internal"><?=$this->Lang("Customer relations");?></a></li>
+                <li><a href="<?=$this->Link("kreacja");?>" class="internal"><?=$this->Lang("Kreacja");?></a></li>
+            </ul>
+        </li>
+        <li><a href="<?=$this->Link("onas");?>" class="internal"><?=$this->Lang("O nas");?></a></li>
+        <li><a href="/kariera"><?=$this->Lang("Kariera");?></a></li>
+        <li><a href="/blog" target="_blank"><?=$this->Lang("Blog");?></a></li>
+        <li><a href="<?=$this->Link("kontakt");?>" class="internal"><?=$this->Lang("Kontakt");?></a></li>
+    </ul>
+
+    <?php if(count(\Application\View\Helper\Lang::getLanguages())>1) { ?>
+    <div class="lang-switch">
+        <?=$this->Lang("Wybierz język:");?>
+        <?php foreach($this->langs as $lang) {
+            ?><a href="/<?=$lang->acro;?>/" <?=$lang->active ? 'class="active"' : "";?>><?=strtoupper($lang->acro);?></a><?php
+        } ?>
+    </div>
+    <?php } ?>
+    <a class="for-publishers" href="https://wydawcy.novem.pl"><?=$this->Lang("Portal dla wydawców");?> <div class="anchor-indicator"></div></a>
+
+    <div class="novem-info">
+        <p>Novem sp. z o.o.</p>
+        <p><?=$this->Lang("Rok założenia:");?> 2006</p>
+        <p>Numer KRS: 0000267639</p>
+        <p>NIP: 6772280250</p>
+        <p>REGON: 12035294</p>
+        <p><?=$this->Lang("Kapitał zakładowy:");?> 481 000 zł</p>
+    </div>
+</nav>
+<div class="main-holder">
+<main id="main-content">
+
+    <div class="page-content">
+
+    <? $pageTitle = '';?>
+
+    <?= $this->templateContent; ?>
+
+    </div>
+    <div class="bottom">
+        <section class="container contact-form">
+            <div class="content">
+                <div class="contact-form-holder">
+                    <div class="info" style="padding-top: 50px !important; padding-bottom: 40px !important;">
+                        <div  style="padding-bottom: 5px !important;"><?=$this->Lang("Skontaktuj się z nami");?></div>
+                        <ul>
+                            <li  style="padding-bottom: 5px !important;"><label><?=$this->Lang("Email:");?></label><a href="mailto:kontakt@novem.pl">kontakt@novem.pl</a></li>
+                            <li  style="padding-bottom: 5px !important;"><label><?=$this->Lang("Sekretariat:");?></label><a href="tel:+48608365820">&nbsp +48 608 365 820</a></li>
+                          </ul>
+                          <div style="padding-bottom: 10px !important;"><?=$this->Lang("New Business Manager: Radosław Gawlas");?></div>
+                          <ul>
+                            <li><label><?=$this->Lang("Email:");?></label><a href="mailto:r.gawlas@promoagency.pl">r.gawlas@promoagency.pl</a></li>
+                            <li><label><?=$this->Lang("Telefon:");?></label><a href="tel:+48733607401"> +48 733 607 401</a></li>
+                        </ul>
+                        <div style="padding-bottom: 10px !important;"><?=$this->Lang("KONTAKT DLA WYDAWCÓW");?></div>
+                        <ul>
+                          <li><label><?=$this->Lang("Email:");?></label><a href="mailto:wydawcy@novem.pl">wydawcy@novem.pl</a></li>
+                          <li><label><?=$this->Lang("Telefon:");?></label><a href="tel:+48608365820"> +48 608 365 820</a></li>
+                      </ul>
+                    </div>
+                    <div class="form">
+                      <form>
+                        <div class="form-columns-2">
+                          <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field">
+                            <label class="" placeholder="Enter your Imię">
+                            <span>Imię</span>
+                            </label>
+                            <legend class="hs-field-desc" style="display:none;"></legend>
+                              <div class="input">
+                                <input class="hs-input" type="text" name="firstname" value="<?php echo $name; ?>" placeholder="" autocomplete="given-name" inputmode="text">
+                              </div>
+                          </div>
+                          <div class="hs_lastname hs-lastname hs-fieldtype-text field hs-form-field">
+                            <label class="" placeholder="Enter your Nazwisko"><span>Nazwisko</span>
+                            </label>
+                            <legend class="hs-field-desc" style="display:none;">
+                            </legend>
+                            <div class="input">
+                              <input class="hs-input" type="text" name="lastname" value="" placeholder="" autocomplete="family-name" inputmode="text">
+
+                            </div>
+                          </div>
+                        </div>
+                  <div class="form-columns-2">
+                    <div class="hs_email hs-email hs-fieldtype-text field hs-form-field"><label class="" placeholder="Enter your Adres e-mail"><span>Adres e-mail</span><span class="hs-form-required">*</span></label><legend class="hs-field-desc" style="display:none;"></legend>
+                      <div class="input"><input class="hs-input" type="email" name="email" required="" placeholder="" value="<?php echo $email; ?>" autocomplete="email" inputmode="email">
+                      </div>
+                    </div>
+                    <div class="hs_phone hs-phone hs-fieldtype-text field hs-form-field"><label class="" placeholder="Enter your Numer telefonu"><span>Numer telefonu</span></label><legend class="hs-field-desc" style="display:none;"></legend>
+                      <div class="input"><input class="hs-input" type="tel" name="phone" value="<?php echo $phone; ?>" placeholder="" autocomplete="tel" inputmode="tel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-columns-1">
+                    <div class="hs_message hs-message hs-fieldtype-textarea field hs-form-field"><label id="label-message-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="" placeholder="Enter your Wiadomość" for="message-e2aa5513-2eab-41c5-87d2-a16589ae7a34"><span >Wiadomość</span></label><legend class="hs-field-desc" style="display:none;"></legend>
+                      <div class="input"><textarea id="message-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="hs-input" name="message" placeholder=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-columns-1">
+                    <div class="legal-consent-container">
+                      <div class="hs-richtext">
+                        <p>Firma Novem zobowiązuje się do ochrony i poszanowania Państwa prywatności, a Państwa dane osobowe będziemy wykorzystywać wyłącznie do administrowania Państwa kontem oraz do dostarczania produktów i usług, o które Państwo prosili. Od czasu do czasu chcielibyśmy się z Państwem skontaktować w sprawie naszych produktów i usług, jak również innych treści, które mogą Państwa zainteresować. Jeśli zgadzają się Państwo na kontakt z nami w tym celu, proszę zaznaczyć poniżej, aby określić, w jaki sposób mamy się z Państwem kontaktować:</p>
+                      </div>
+                      <div>
+                        <div class="hs-dependent-field">
+                          <div class="hs_LEGAL_CONSENT.subscription_type_6283285 hs-LEGAL_CONSENT.subscription_type_6283285 hs-fieldtype-booleancheckbox field hs-form-field"><legend class="hs-field-desc" style="display:none;"></legend>
+                            <div class="input"><ul class="inputs-list"><li class="hs-form-booleancheckbox"><label for="LEGAL_CONSENT.subscription_type_6283285-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="hs-form-booleancheckbox-display">
+                              <input id="LEGAL_CONSENT.subscription_type_6283285-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="" type="checkbox" name="LEGAL_CONSENT.subscription_type_6283285" value="true"><span><p>Wyrażam zgodę na otrzymywanie innych powiadomień od firmy Novem.</p></span></label></li></ul>
+                            </div>
+                          </div>
+                        </div><legend class="hs-field-desc checkbox-desc" style="display:none;"></legend>
+                      </div>
+                      <div class="hs-richtext">Aby zapewnić Państwu żądane treści, musimy przechowywać i przetwarzać Państwa dane osobowe. Jeśli wyrażają Państwo zgodę na przechowywanie Państwa danych osobowych w tym celu, prosimy zaznaczyć poniższe pole wyboru.
+                      </div>
+                      <div>
+                        <div class="hs-dependent-field">
+                          <div class="hs_LEGAL_CONSENT.processing hs-LEGAL_CONSENT.processing hs-fieldtype-booleancheckbox field hs-form-field"><legend class="hs-field-desc" style="display:none;"></legend>
+                            <div class="input"><ul class="inputs-list" required=""><li class="hs-form-booleancheckbox"><label for="LEGAL_CONSENT.processing-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="hs-form-booleancheckbox-display">
+                              <input id="LEGAL_CONSENT.processing-e2aa5513-2eab-41c5-87d2-a16589ae7a34" class="" type="checkbox" name="LEGAL_CONSENT.processing" value="true"><span><p>Wyrażam zgodę na przechowywanie i przetwarzanie moich danych osobowych przez firmę Novem.</p><span class="hs-form-required">*</span></span></label></li></ul>
+                            </div>
+                          </div>
+                        </div><legend class="hs-field-desc checkbox-desc" style="display:none;"></legend>
+                      </div>
+                      <div class="hs-richtext">W każdej chwili mogą Państwo zrezygnować z tych komunikatów. Aby uzyskać więcej informacji na temat sposobu rezygnacji z subskrypcji, naszych zasad ochrony prywatności oraz tego, w jaki sposób zobowiązujemy się do ochrony i poszanowania prywatności, należy zapoznać się z naszą Polityką Prywatności.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hs_submit hs-submit">
+                    <div class="hs-field-desc" style="display:none;"></div>
+                    <div class="actions">
+                      <input type="submit" value="Prześlij" class="hs-button primary large" onclick="jsfunction();return false;">
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </section>
+        <footer>
+            <div>
+                &copy; <?= date('Y'); ?> <strong>Agencja Novem. Performance Marketing</strong>
+                &bull; <?=$this->Lang("Wszelkie prawa zastrzeżone");?>
+                &bull; <a href="/polityka-prywatnosci" target="_blank" id="privacy_link"><?=$this->Lang("Polityka prywatności");?></a>
+                &bull; <a href="/polityka-cookies" target="_blank" id="privacy_link"><?=$this->Lang("Polityka cookies");?></a>
+                &bull; <a href="/doc/Novem-ogolne_warunki_umow_o_swiadczenie_uslug_reklamowych_oferowanych_przez_Novem.pdf" target="_blank"><?=$this->Lang("Ogólne warunki przyjmowania zleceń");?></a>
+            </div>
+        </footer>
+    </div>
+</main>
+</div>
+
+<section class="agreePopup">
+    <span class="closeAgree">X</span>
+    <p></p>
+</section>
+</div>
+
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/scrollmagic/plugins/TweenMax.min.js" type="text/javascript"></script>
+<script src="/js/scrollmagic/ScrollMagic.min.js" type="text/javascript"></script>
+<script src="/js/scrollmagic/plugins/animation.gsap.min.js" type="text/javascript"></script>
+<script src="/js/js.js<?=$this->CacheBuster();?>" type="text/javascript"></script>
+<script src="/js/jquery.popupoverlay.js"></script>
+<script src="/js/js.cookie.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function($) {
+
+    jQuery(document).on('click', '.talk-popup-close', function(e){
+        e.preventDefault();
+        Cookies.set('talkPopup', '1', { expires: 1 });
+        $('.talk-popup-wrapp').addClass('hidden');
+    });
+
+    var talkPopupCookie = Cookies.get('talkPopup');
+
+    if(talkPopupCookie == undefined) {
+
+        setTimeout(function() {
+            $('.talk-popup-wrapp').removeClass('hidden');
+        }, 10000);
+    }
+});
+
+});
+
+</script>
+
+<script>
+  window.intercomSettings = {
+    app_id: "tlp95ckl"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/tlp95ckl';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+</html>
